@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/margin_50"
+		android:background="@color/colorPrimary"
+		android:gravity="center"
+		android:orientation="horizontal">
+
+		<ImageView
+			android:id="@+id/backimage"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="@dimen/margin_10"
+			android:background="@mipmap/back"/>
+
+		<TextView
+			android:id="@+id/toolbartext"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="center_vertical"
+			android:text=""
+			android:textColor="@color/white"
+			android:textSize="@dimen/text_15"
+			android:textStyle="normal"/>
+	</LinearLayout>
+
+	<android.support.v4.widget.NestedScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<RelativeLayout
+				android:id="@+id/toprel"
+				android:layout_width="match_parent"
+				android:layout_height="300dp">
+
+				<android.support.v4.view.ViewPager
+					android:id="@+id/pager"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:layout_alignParentTop="true"/>
+
+				<com.viewpagerindicator.CirclePageIndicator
+					android:id="@+id/indicator"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_alignParentBottom="true"
+					android:layout_centerHorizontal="true"
+					android:gravity="bottom"
+					android:padding="10dp"
+					app:centered="true"
+					app:fillColor="@color/colorPrimary"/>
+
+				<LinearLayout
+					android:id="@+id/transbar"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/margin_25"
+					android:layout_alignParentBottom="true"
+					android:layout_centerHorizontal="true"
+					android:alpha=".6"
+					android:background="@color/text_black"
+					android:gravity="center"
+					android:orientation="horizontal"
+					android:paddingLeft="@dimen/margin_10"
+					android:paddingRight="@dimen/margin_10">
+
+					<TextView
+						android:id="@+id/photocount"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_weight=".5"
+						android:text=""
+						android:maxLines="1"
+						android:textColor="@color/white"
+						android:textSize="@dimen/text_14"
+						android:textStyle="normal"/>
+
+
+					<TextView
+						android:id="@+id/validitytext"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_weight=".5"
+						android:gravity="right"
+						android:text="  "
+						android:maxLines="1"
+						android:textColor="@color/white"
+						android:textSize="@dimen/text_14"
+						android:textStyle="normal"
+						android:visibility="visible"/>
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/nofferlayout"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:gravity="center"
+					android:layout_alignParentTop="true">
+				<ImageView
+					android:id="@+id/noofferimage"
+					android:layout_width="150dp"
+					android:layout_height="120dp"/>
+				</LinearLayout>
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="0.5dp"
+					android:layout_alignParentBottom="true"
+					android:layout_centerHorizontal="true"
+					android:background="@color/text_black_light"/>
+			</RelativeLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="@dimen/margin_15"
+				android:layout_marginLeft="@dimen/margin_10"
+				android:layout_marginRight="@dimen/margin_10"
+				android:layout_marginTop="@dimen/margin_15"
+				android:gravity="center_vertical"
+				android:orientation="vertical">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:orientation="horizontal">
+
+					<TextView
+						android:id="@+id/shopname"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_weight=".3"
+						android:ellipsize="end"
+						android:maxLines="1"
+						android:text=" "
+						android:textColor="@color/text_black"
+						android:textSize="@dimen/text_17"
+						android:textStyle="normal"/>
+
+					<TextView
+						android:id="@+id/uploadedtime"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_weight=".7"
+						android:ellipsize="end"
+						android:gravity="right|center"
+						android:maxLines="1"
+						android:text="  "
+						android:textColor="@color/text_black"
+						android:textSize="@dimen/text_13"
+						android:textStyle="normal"/>
+				</LinearLayout>
+
+				<TextView
+					android:id="@+id/validontext"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/margin_8"
+					android:ellipsize="end"
+					android:text="  "
+					android:textColor="@color/text_black"
+					android:textSize="@dimen/text_15"
+					android:textStyle="normal"
+					android:visibility="visible"/>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<TextView
+						android:id="@+id/location"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_weight=".4"
+						android:drawableLeft="@mipmap/location"
+						android:ellipsize="end"
+						android:gravity="center_vertical"
+						android:text="  "
+						android:textColor="@color/text_black_light"
+						android:textSize="@dimen/text_14"
+						android:textStyle="normal"/>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_weight=".7"
+						android:gravity="center">
+
+						<TextView
+							android:id="@+id/gotomap"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:background="@drawable/rectanglebutton"
+							android:paddingBottom="@dimen/margin_7"
+							android:paddingLeft="@dimen/margin_10"
+							android:paddingRight="@dimen/margin_10"
+							android:paddingTop="@dimen/margin_7"
+							android:text="@string/gotomap"
+							android:textColor="@color/colorPrimary"/>
+					</LinearLayout>
+				</LinearLayout>
+
+				<TextView
+					android:id="@+id/distanceinkm"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:drawableLeft="@mipmap/km"
+					android:ellipsize="end"
+					android:gravity="center_vertical"
+					android:text="  "
+					android:textColor="@color/text_black_light"
+					android:textSize="@dimen/text_14"
+					android:textStyle="normal"/>
+
+				<TextView
+					android:id="@+id/websitelink"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:drawableLeft="@mipmap/globe"
+					android:ellipsize="end"
+					android:layout_marginLeft="@dimen/margin_5"
+					android:layout_marginTop="@dimen/margin_5"
+					android:gravity="center_vertical"
+					android:text="  "
+					android:drawablePadding="@dimen/margin_5"
+					android:textColor="@color/text_black_light"
+					android:textSize="@dimen/text_14"
+					android:textStyle="normal"/>
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="0.5dp"
+					android:layout_marginTop="@dimen/margin_5"
+					android:layout_marginBottom="@dimen/margin_5"
+					android:background="@color/text_black_light"/>
+				<LinearLayout
+					android:id="@+id/timinlayout"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/daytext"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="Opening Hours"
+						android:textSize="@dimen/text_14"
+						android:textColor="@color/text_black"
+						android:gravity="center_vertical"
+						android:layout_weight=".4"/>
+
+				</LinearLayout>
+
+				<android.support.v7.widget.CardView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/margin_10">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+
+						<android.support.v7.widget.RecyclerView
+							android:id="@+id/openclose_rec"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+					</LinearLayout>
+				</android.support.v7.widget.CardView>
+			</LinearLayout>
+		</LinearLayout>
+	</android.support.v4.widget.NestedScrollView>
+	<LinearLayout
+		android:id="@+id/noofferlayout"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:visibility="gone"
+		android:gravity="center">
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@mipmap/images"/>
+		<TextView
+			android:id="@+id/nooffers"
+			android:visibility="visible"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:textColor="@color/colorPrimary"
+			android:textStyle="normal"
+			android:textSize="@dimen/text_16"
+			android:layout_marginTop="@dimen/margin_10"
+			android:text="@string/nooffersfound"/>
+	</LinearLayout>
+</LinearLayout>

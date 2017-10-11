@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_margin="@dimen/margin_2">
+
+	<TextView
+		android:id="@+id/day"
+		android:layout_width="@dimen/margin_50"
+		android:layout_height="match_parent"
+		android:singleLine="true"
+		android:paddingLeft="@dimen/margin_10"
+		android:text=""
+		android:gravity="center_vertical"/>
+	<TextView
+		android:id="@+id/opening"
+		android:layout_width="70dp"
+		android:layout_height="match_parent"
+		android:text=""
+		android:layout_marginLeft="@dimen/margin_5"
+		android:gravity="center_vertical"/>
+	<TextView
+		android:id="@+id/to"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="to"
+		android:visibility="gone"
+		android:layout_marginLeft="@dimen/margin_5"
+		android:layout_marginRight="@dimen/margin_5"/>
+	<TextView
+		android:id="@+id/closing"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:gravity="center_vertical"/>
+
+</LinearLayout>

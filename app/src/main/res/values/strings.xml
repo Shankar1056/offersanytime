@@ -1,0 +1,40 @@
+<resources>
+	<string name="app_name">OffersAnyTime</string>
+
+	<string name="navigation_drawer_open">Open navigation drawer</string>
+	<string name="navigation_drawer_close">Close navigation drawer</string>
+
+	<string name="home">Store</string>
+	<string name="more">All Categories</string>
+	<string name="saveaddress">SAVE ADDRESS</string>
+
+	<!-- All Fonts   -->
+	<string name="regular_font">fonts/Ubuntu-Regular.ttf</string>
+	<string name="black_font">fonts/CeliasBlack.otf</string>
+	<string name="black_italic_font">fonts/CeliasBlackItalic.otf</string>
+	<string name="bold_font">fonts/Ubuntu-Bold.ttf</string>
+	<string name="light_font">fonts/CeliasLight.otf</string>
+	<string name="medium_font">fonts/Ubuntu-Medium.ttf</string>
+	<string name="italic_font">fonts/CeliasRegularItalic.otf</string>
+	<string name="thin_font">fonts/celiasthin.otf</string>
+	<string name="gps_network_not_enabled">GPS network not enabled</string>
+	<string name="open_location_settings">Open Setting</string>
+	<string name="cancel">Cancel</string>
+	<string name="grant_permission">Grant Permission</string>
+	<string name="please_choose_location">Please choose location</string>
+	<string name="no_location">No Location found</string>
+
+	<string name="google_geo_api_key">AIzaSyD9OAGgB2INbUJwwtORRF1ZyaloEEt4W2A</string><!-- SERVER -->
+	<!--10:63:1D:86:89:E1:37:39:CC:48:C9:8E:4F:0E:70:12:64:8C:E3:4E-->
+	<!--<string name="google_geo_api_key">AIzaSyAJE58u8qzltRCPvU2mxGmvtKflqn36pTQ</string>--><!-- LOCAL-->
+	<string name="gotomap">Go to map</string>
+	<string name="contactinformation">Contact Information</string>
+	<string name="emailid">Email Id</string>
+	<string name="mpbilenumber">Mobile Number</string>
+	<string name="contactus">Contact Us</string>
+	<string name="loading">Loading, Please wait</string>
+	<string name="notificationonoff">Notification On/Off</string>
+	<string name="nooffersfound">No offers found near you\nPlease choose after few days</string>
+	<string name="nointernetconnection">No Internet Connection</string>
+
+</resources>

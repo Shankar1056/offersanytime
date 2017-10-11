@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	>
+	<LinearLayout
+		android:id="@+id/top"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/margin_50"
+		android:gravity="bottom"
+		android:background="@color/text_black"
+		android:alpha=".6"
+		android:orientation="horizontal"
+		android:padding="@dimen/margin_10">
+
+		<ImageView
+			android:id="@+id/backimage"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="@dimen/margin_10"
+			android:visibility="gone"
+			android:background="@mipmap/back"/>
+
+		<TextView
+			android:id="@+id/count"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:gravity="center_vertical"
+			android:text=""
+			android:textColor="@color/white"
+			android:textSize="@dimen/text_15"
+			android:textStyle="normal"/>
+		<TextView
+			android:id="@+id/expiry"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="center|right"
+			android:text=""
+			android:textColor="@color/white"
+			android:textSize="@dimen/text_15"
+			android:textStyle="normal"
+			android:layout_marginRight="@dimen/margin_10"/>
+	</LinearLayout>
+
+
+
+	<bigappcompany.com.myoffers.network.TouchImageView
+		android:id="@+id/expanded_image"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:visibility="visible"
+		android:layout_below="@+id/top"
+		android:scaleType="fitXY"/>
+
+
+</RelativeLayout>
+
