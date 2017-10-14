@@ -24,9 +24,9 @@
 	<string name="please_choose_location">Please choose location</string>
 	<string name="no_location">No Location found</string>
 
-	<string name="google_geo_api_key">AIzaSyD9OAGgB2INbUJwwtORRF1ZyaloEEt4W2A</string><!-- SERVER -->
+	<!--<string name="google_geo_api_key">AIzaSyD9OAGgB2INbUJwwtORRF1ZyaloEEt4W2A</string>--><!-- SERVER -->
 	<!--10:63:1D:86:89:E1:37:39:CC:48:C9:8E:4F:0E:70:12:64:8C:E3:4E-->
-	<!--<string name="google_geo_api_key">AIzaSyAJE58u8qzltRCPvU2mxGmvtKflqn36pTQ</string>--><!-- LOCAL-->
+	<string name="google_geo_api_key">AIzaSyAJE58u8qzltRCPvU2mxGmvtKflqn36pTQ</string><!-- LOCAL-->
 	<string name="gotomap">Go to map</string>
 	<string name="contactinformation">Contact Information</string>
 	<string name="emailid">Email Id</string>

@@ -248,22 +248,28 @@ public class Description extends AppCompatActivity implements View.OnClickListen
 	}
 	
 	private void setbannerinAdapter(ArrayList<CatBanner> catBanners) {
-		
-		for (int i = 0; i < catBanners.size(); i++) {
-			String example = catBanners.get(i).getValid_for();
-			if (example.matches("(.*)" + catName + "(.*)") || example.matches("(.*)" + catName)
-			    || example.matches(catName + "(.*)")) {
-				System.out.println("working");
-				catBanners.set(0, new CatBanner(catBanners.get(i).getBanner_id(), catBanners.get(i)
-				    .getBanner_image(), catBanners.get(i).getCategory(), catBanners.get(i).getValid_for(),
-				    catBanners.get(i).getValid_till()));
-				catBanners.set(i, new CatBanner(catBannersFiltered.get(0).getBanner_id(), catBannersFiltered.get(0)
-				    .getBanner_image(), catBannersFiltered.get(0).getCategory(), catBannersFiltered.get(0)
-				    .getValid_for(), catBannersFiltered.get(0).getValid_till()));
+		if (catName.equals(""))
+		{
+			
+		}
+		else {
+			for (int i = 0; i < catBanners.size(); i++) {
+				String example = catBanners.get(i).getValid_for();
+				if (example.matches("(.*)" + catName + "(.*)") || example.matches("(.*)" + catName)
+				    || example.matches(catName + "(.*)")) {
+					System.out.println("working");
+					catBanners.set(0, new CatBanner(catBanners.get(i).getBanner_id(), catBanners.get(i)
+					    .getBanner_image(), catBanners.get(i).getCategory(), catBanners.get(i).getValid_for(),
+					    catBanners.get(i).getValid_till()));
+					catBanners.set(i, new CatBanner(catBannersFiltered.get(0).getBanner_id(), catBannersFiltered.get(0)
+					    .getBanner_image(), catBannersFiltered.get(0).getCategory(), catBannersFiltered.get(0)
+					    .getValid_for(), catBannersFiltered.get(0).getValid_till()));
+					
+				break;
+				}
+				
 				
 			}
-			
-			
 		}
 		mPager.setAdapter(new SlidingImage_Adapter(Description
 		    .this, catBanners, Description.this));

@@ -431,6 +431,7 @@ public class HomeFragment extends Fragment {
 	
 	
 	public void sendpos(int position) {
+		ClsGeneral.setPreferences(getActivity(), ClsGeneral.CATEGORYNAME, "");
 		locationModels.clear();
 		ArrayList<LocationModel> a = locdata;
 		ArrayList<LocationModel> aa = new ArrayList<>();
